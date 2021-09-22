@@ -26,10 +26,6 @@
       
   }
 
-  .hero-form p {
-    margin: 5px 0 15px 0;
-  }
-
   .hero-form h3 {
     font-size: 24px;
     margin: 0;
@@ -61,6 +57,83 @@
     font-size: 16px;
   }
   /* Hero Style End */
+
+  .intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .steps {
+    text-align: center;
+    background: #fce138;
+  }
+
+  .steps div {
+    margin-bottom: 80px;
+  }
+  
+  .steps img {
+    width: 15%;
+    margin: 10px 0;
+  }
+  
+  .steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+  }
+  
+  .steps p {
+    color: #39a6b2;
+    font-size: 23px;
+  }
+
+  .steps {
+      font-size: 38px;
+  }
+
+  .section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+
+  .trainers {
+      text-align: center;
+  }
+
+  .trainer {
+    width: 900px;
+    margin: 0 auto 30px auto;
+    background: #024e76;
+    color: #fce138;
+    overflow: auto;
+  }
+
+  .trainer img {
+    width: 35%;
+    float: left;
+  }
+  
+  .trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+  }
 
 header {
     padding: 20px 35px;
