@@ -197,6 +197,24 @@ header {
     background-color: #39a6b2;
 }
 
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
+}
+
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: #fce138;
+}
+
+/* REACH OUT STYLES END */
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
