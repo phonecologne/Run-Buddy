@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    align-items: flex-start;
 }
 
 .hero-form {
@@ -37,6 +38,10 @@
 
   .hero-form label {
     margin: 0 5px;
+  }
+
+  .hero-form cta {
+    line-height: 1.2;
   }
   
   .form-input {
@@ -96,7 +101,7 @@
   }
 
   .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
@@ -238,6 +243,7 @@ header a {
       margin: 0 30px;
       font-weight: lighter;
       font-size: 22px;
+      padding: 10px 15px;
   }
 
   footer {
@@ -267,4 +273,26 @@ body {
     /* more on this crazy alphanumerical value in a minute */
     color: #39a6b2
     font-family; Helvetica, Arial, sans-serif;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+    color: tomato;
+  }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
 }
