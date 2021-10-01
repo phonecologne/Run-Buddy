@@ -24,7 +24,6 @@
     position: absolute;
     bottom: 120px;
     right: 140px;
-      
   }
 
   .hero-form h3 {
@@ -60,6 +59,14 @@
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
   }
   /* Hero Style End */
 
@@ -107,6 +114,7 @@
     padding: 0 100px 20px 100px;
     display: inline-block;
     border-bottom: 3px solid;
+    width: 80%;
   }
   
   .primary-border {
@@ -127,6 +135,7 @@
     background: #024e76;
     color: #fce138;
     overflow: auto;
+    flex: 0 70%;
   }
 
   .trainer img {
@@ -186,6 +195,7 @@
 .contact-info iframe {
   width 400px;
   height: 400px;
+  flex: 1 100%;
 }
 
 .contact-info div {
@@ -280,12 +290,38 @@ body {
     /* this will be applied on any screen smaller than 980px */
     color: tomato;
   }
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   header h1 {
     /* this will be applied on any screen between 768px and 575px */
     font-size: 80px;
+    width: 100%;
+  }
+  section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
   }
 }
 
@@ -294,5 +330,60 @@ body {
   header h1 {
     /* this will be applied on any screen smaller than 575px */
     font-size: 100px;
+  }
+
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
   }
 }
